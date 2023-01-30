@@ -94,7 +94,7 @@ namespace OperaWebSite.Controllers
             }
             else
             {
-                return View("detalle", opera);
+                return View("Details", opera);
             }
 
         }
