@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 
 namespace OperaWebSitee.Controllers
 {
@@ -6,6 +7,8 @@ namespace OperaWebSitee.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Nombre = "Bienvenido al sistema de Operas";
+            ViewBag.Fecha = DateTime.Now.ToString();
             return View();
         }
     }

@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OperaWebSite.Data;
 using OperaWebSite.Models;
+using OperaWebSitee.Data;
 using System.Linq;
 
 namespace OperaWebSite.Controllers
 {
     public class OperaController : Controller
     {
-        private readonly OperaDBContext context;
+        private readonly DBOperaContext context;
 
-        public OperaController(OperaDBContext context)
+        public OperaController(DBOperaContext context)
         {
             this.context = context;
         }
